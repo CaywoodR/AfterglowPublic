@@ -25,14 +25,14 @@ y1 = cleaned_data[:, 1]
 y2_vectors = cleaned_data[:, 2:]
 
 
-y2 = y2_vectors[:, 0]  # Change 0 to the index of the element you want to extract (Come back later after presentation)
+y2 = y2_vectors[:, 0]  # Change 0 to the index of the element you want to extract. Come back later after presentation
 
 # Convert data to float
 x = x.astype(float)
 y1 = y1.astype(float)
 y2 = y2.astype(float)
 
-# Filter (It's to late for plotting errors...)
+# Filter It's to late for plotting errors...
 valid_indices = ~np.isnan(x) & ~np.isnan(y1) & ~np.isnan(y2)
 x = x[valid_indices]
 y1 = y1[valid_indices]
